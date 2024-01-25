@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap test</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3929e93ccc.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+
+</head>
+<body>
+    <div class="container w-50 bt-5 shadow-lg rounded d-flex justify-content-center flex-column align-items-center">
+        <header class="">
+            <h1 class="text-primary">Trójkąty</h1>
+        </header>
+        <main class="m-5 shadow-lg bg-white rounded w-50 d-flex justify-content-center ">
+            <form action="#">
+                <div class="mb-3">
+                    <label for="b1" class="form-label">Długość boku 1:</label>
+                    <input type="text" class="form-control" id="b1">
+                </div>
+                <div class="mb-3">
+                    <label for="b2" class="form-label">Długość boku 2:</label>
+                    <input type="text" class="form-control" id="b2">
+                </div>
+                <div class="mb-3">
+                    <label for="b3" class="form-label">Długość boku 3:</label>
+                    <input type="text" class="form-control" id="b3">
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">oblicz pole trójkąta</button>
+                  </div>
+            </form>
+        </main>
+        <p class="text-danger" id="displayError"></p>
+        <div class="card d-none" style="width: 18rem;" id="displayDiv">
+            <img src="" class="card-img-top" alt="test" id="displayImg">
+            <div class="card-body">
+              <p class="card-text" id="displayLengths"></p>
+              <h5 class="card-title text-primary" id="displayKind" ></h5>
+              <p class="card-text" id="displayArea"></p>
+            </div>
+          </div>
+        <footer>&copy; ME XXIw.</footer>
+    </div>
+</body>
+</html>
